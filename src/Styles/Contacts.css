@@ -1,9 +1,13 @@
-.contact-div {
-
+#contact-div {
+    text-align: left;
+    float: left;
+    margin-top: 5%;
 }
 
-.contact-individual {
-
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .contact-individual p {

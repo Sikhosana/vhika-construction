@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-import './index.css'
 import Contacts from './components/content/Contacts'
 import Logo from './components/logo/Logo';
 
@@ -18,8 +17,8 @@ class App extends React.Component {
     render() {
 
         return (
-            <>
-                <nav>
+            <div id={"page"}>
+                <div class={"grid-container"}>
                     <div className={"logo"}>
                         <Logo />
                     </div>
@@ -29,11 +28,11 @@ class App extends React.Component {
                         <button id={"nav-item"} onClick={this.showContent}>GALLERY</button>
                         <button id={"nav-item"} onClick={this.showContent}>CONTACT</button>
                     </div>
-                </nav>
+                </div>
 
                 <Contacts />
 
-            </>
+            </div>
         );
     }
 }
