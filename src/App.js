@@ -1,4 +1,8 @@
 import React from 'react'
+import './App.css'
+import './index.css'
+import Contacts from './components/content/Contacts'
+import Logo from './components/logo/Logo';
 
 
 //in this file we need a navigation bar hooked with onclick events that set the react state to allow rendering of the necessary info
@@ -17,7 +21,7 @@ class App extends React.Component {
             <>
                 <nav>
                     <div className={"logo"}>
-
+                        <Logo />
                     </div>
                     <div className={"nav-links"}>
                         <button id={"nav-item"} onClick={this.showContent}>HOME</button>
@@ -27,14 +31,11 @@ class App extends React.Component {
                     </div>
                 </nav>
 
-                {/*{this.state.current == 'home' && }*/}
-                {/*{this.state.current == 'home' && }*/}
-                {/*{this.state.current == 'home' && }*/}
-                {/*{this.state.current == 'home' && }*/}
+                <Contacts />
 
             </>
         );
     }
-};
+}
 
 export default App;
