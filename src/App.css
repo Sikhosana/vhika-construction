@@ -1,8 +1,22 @@
-#page {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#topItem {
+    position: fixed;
+    top: 0;
     margin: 20px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 11fr;
+#middleItem {
+
+}
+
+#bottomItem {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 20px;
 }
