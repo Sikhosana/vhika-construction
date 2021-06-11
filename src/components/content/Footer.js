@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import '../../Styles/Contacts.css'
 
-class Contacts extends Component {
+class Footer extends Component {
     render() {
         return (
             <>
@@ -16,7 +16,7 @@ class Contacts extends Component {
                     </div>
                     <div className={"grid-container"}>
                         <div>
-                            <p>HTULANI T.CHIPUNZA</p>
+                            <p>HTULANI T. CHIPUNZA</p>
                         </div>
                         <div>
                             <p><a href={"tel:+263775314148"}>+263 775-314-148</a></p>
@@ -37,4 +37,4 @@ class Contacts extends Component {
     }
 }
 
-export default Contacts;
+export default Footer;
