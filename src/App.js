@@ -23,15 +23,18 @@ class App extends React.Component {
     render() {
 
         return (
-            <div>
+            <div id={"page"}>
                 <div id={"topItem"}>
-                    <div className={"navbar"}>
-                        <div className={"container"}>
-                            <div className={"logo_div"}>
-                                <img alt={"LOGO HERE"} src={logo} className={"logo"}/>
-                                <h1>VHIKA</h1>
+                    <div className={"container"}>
+                            <div className={"container_1"}>
+                                <div>
+                                    <img alt={"LOGO HERE"} src={logo} className={"logo"}/>
+                                </div>
+                                <div>
+                                    <h1>VHIKA</h1>
+                                </div>
                             </div>
-                            <div className={"navbar_links"}>
+                            <div className={"container_2"}>
                                 <ul className={"menu"}>
                                     <li><button onClick={() => this.setState({current: 'home'})} >HOME</button></li>
                                     <li><button onClick={() => this.setState({current: 'services'})} >SERVICES</button></li>
@@ -39,7 +42,6 @@ class App extends React.Component {
                                     <li><button onClick={() => this.setState({current: 'contact'})} >CONTACT</button></li>
                                 </ul>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div id={"middleItem"}>
@@ -51,7 +53,6 @@ class App extends React.Component {
                 <div id={"bottomItem"}>
                     <Footer />
                 </div>
-
             </div>
         );
     }

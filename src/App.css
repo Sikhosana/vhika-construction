@@ -1,33 +1,26 @@
-#topItem {
-    line-height: 60px;
-    width: 100%;
-    height: 80px;
-    overflow: hidden;
-}
-
-.container {
-    width: 90%;
+#page {
     margin: 20px;
 }
 
-.logo_div {
-    height: 60px;
-    text-align: left;
-    float: left;
-}
-.logo_div h1 {
-    height: 60px;
-    display: inline;
-
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
 }
 
-.navbar_links {
+.container_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+img {
+    height: 100px;
+}
+.container_2 {
+    vertical-align: middle;
     text-align: right;
-}
-
-.logo {
-    height: 60px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .menu {
@@ -35,9 +28,14 @@
 }
 
 .menu li {
-    display: inline-block;
+    display: inline;
+    margin: 10px;
 }
 
+
+#middleItem {
+    text-align: center;
+}
 
 #bottomItem {
     position: fixed;
