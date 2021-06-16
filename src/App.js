@@ -45,10 +45,10 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div id={"middleItem"}>
-                    {this.state.current === 'home' && <Home />}
-                    {this.state.current === 'services' && <Services />}
-                    {this.state.current === 'gallery' && <Gallery />}
-                    {this.state.current === 'contact' && <Contact />}
+                        {this.state.current === 'home' && <Home />}
+                        {this.state.current === 'services' && <Services />}
+                        {this.state.current === 'gallery' && <Gallery />}
+                        {this.state.current === 'contact' && <Contact />}
                 </div>
                 <div id={"bottomItem"}>
                     <Footer />

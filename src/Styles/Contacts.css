@@ -1,11 +1,19 @@
-#contact-div {
-    text-align: left;
-    float: left;
-    margin-top: 5%;
+
+.upper {
+    padding: 10px;
 }
 
-.grid-container {
+.container {;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+}
+
+#contact-div {
+    color: #fbfbfd;
+}
+
+.person {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 20px;
 }
