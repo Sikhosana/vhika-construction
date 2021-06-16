@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Carousel from "../Feature Components/Carousel";
 
 class Home extends Component {
     render() {
@@ -6,6 +7,7 @@ class Home extends Component {
             <>
                 <div>
                     <h1>WELCOME TO OUR HOME PAGE</h1>
+                    <Carousel />
                 </div>
             </>
 
