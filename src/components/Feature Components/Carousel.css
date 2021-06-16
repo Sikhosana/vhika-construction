@@ -10,12 +10,18 @@
     position: relative;
 }
 
+.main_div img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: auto;
+ }
 .carousel_content_div {
     position: absolute;
     width: 100%;
     bottom: 10%;
     text-align: center;
-    color: white;
+    color: limegreen;
 
 }
 

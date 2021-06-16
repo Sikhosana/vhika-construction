@@ -31,14 +31,8 @@ class Carousel extends Component {
                 margin: "auto",
                 marginTop: "20px"
             } }   className={"major_div"}>
-                <div
-                    className={"main_div"}
-                    style={{
-                        backgroundImage: 'url(' + this.props.data.items[this.state.index].image + ')',
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundColor: "rgba(0,0,0,0.5)"
-                    }}>
+                <div className={"main_div"}>
+                    <img src={this.props.data.items[this.state.index].image} alt={this.props.data.items[this.state.index].image_alt}/>
                     <div className={"carousel_content_div"}>
                         {this.props.data.items[this.state.index].html_content}
                     </div>
