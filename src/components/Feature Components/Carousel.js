@@ -43,9 +43,13 @@ class Carousel extends Component {
                     </div>
                     <div className={"left_button_div"}>
                         <button onClick={
-                            () => this.setState(
-                                {index: (this.state.index - 1) % this.props.data.items.length}
-                            )}>
+                            () => {
+                                console.log(this.state.index)
+                                this.setState(
+                                {index: (this.state.index - 1 < 0) ?
+                                        this.props.data.items.length - 1 :
+                                        this.state.index - 1 % this.props.data.items.length}
+                            )}}>
                             <FontAwesomeIcon icon={faAngleLeft} size={"2x"} />
                         </button>
                     </div>
