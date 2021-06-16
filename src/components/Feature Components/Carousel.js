@@ -9,43 +9,59 @@ class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            width: "100%",
-            height: "400px",
-            item: 0,
-            items: [
-                {
-                image_alt: "",
-                image_uri: "#",
-                    html_content: <><b>THE CONTENT</b></>
-                }
-            ],
+            index: 0,
+            intervalID: ""
         }
     }
 
-
+    componentDidMount() {
+        let intervalID = setInterval(() => {
+            this.setState({index: (this.state.index + 1) % this.props.data.items.length})
+            console.log(this.state.index)
+        }, 5000)
+        this.setState({ intervalID: intervalID})
+    }
 
     render() {
         return (
-            <div  style={ { width : this.state.width , height : this.state.height } }   className={"major_div"}>
-                <div className={"main_div"}>
-                    <div className={"image_div"}>
-                        <img
-                            src={this.state.items[this.state.item].image_uri}
-                            alt={this.state.items[this.state.item].image_alt}
-                        />
-                    </div>
+            <div  style={ {
+                width : this.props.data.width ,
+                height : this.props.data.height,
+                margin: "auto",
+                marginTop: "20px"
+            } }   className={"major_div"}>
+                <div
+                    className={"main_div"}
+                    style={{
+                        backgroundImage: 'url(' + this.props.data.items[this.state.index].image + ')',
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundColor: "rgba(0,0,0,0.5)"
+                    }}>
                     <div className={"carousel_content_div"}>
-                        {this.state.items[this.state.item].html_content}
+                        {this.props.data.items[this.state.index].html_content}
                     </div>
                     <div className={"left_button_div"}>
-                        <button><FontAwesomeIcon icon={faAngleLeft}/></button>
+                        <button onClick={
+                            () => this.setState(
+                                {index: (this.state.index - 1) % this.props.data.items.length}
+                            )}>
+                            <FontAwesomeIcon icon={faAngleLeft} size={"2x"} />
+                        </button>
                     </div>
                     <div className={"right_button_div"}>
-                        <button><FontAwesomeIcon icon={faAngleRight}/></button>
+                        <button onClick={
+                            () => this.setState(
+                                {index: (this.state.index + 1) % this.props.data.items.length}
+                            )}><FontAwesomeIcon icon={faAngleRight} size={"2x"} /></button>
                     </div>
                 </div>
             </div>
         )
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.state.intervalID)
     }
 }
 
