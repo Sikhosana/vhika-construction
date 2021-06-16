@@ -25,6 +25,7 @@ class Carousel extends Component {
     render() {
         return (
             <div  style={ {
+                minWidth: "600px",
                 width : this.props.data.width ,
                 height : this.props.data.height,
                 margin: "auto",

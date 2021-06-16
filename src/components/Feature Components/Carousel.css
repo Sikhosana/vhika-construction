@@ -1,5 +1,6 @@
 .major_div {
-
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .main_div {
