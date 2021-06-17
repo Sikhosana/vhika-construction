@@ -47,13 +47,24 @@
 }
 
 .slide-active {
-    opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
+    animation: appear 1s ease-in;
 }
 
 
 .slide {
     display: none;
-    transition: display 1s ease-in;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.8;
+        height: 0;
+
+    }
+    100% {
+        opacity: 1;
+        height: 600px;
+
+    }
 }
