@@ -47,11 +47,10 @@ img {
 
 #middleItem {
     position: relative;
-    text-align: center;
     height: auto;
+    text-align: center;
     margin-top: 80px;
-    margin-bottom: 205px;
-    background-color: red;
+    margin-bottom: 105px;
     z-index: 3;
 }
 
@@ -62,6 +61,10 @@ img {
     bottom: 0;
     background-color: gray;
     width: 100%;
-    height: 200px;
+    height: 100px;
     z-index: -1;
+}
+
+.homeContent {
+    padding-bottom: 20px;
 }

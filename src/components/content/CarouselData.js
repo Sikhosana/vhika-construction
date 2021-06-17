@@ -1,7 +1,7 @@
 import image1 from "../../resources/images/sample_image_1.png"
 import image2 from "../../resources/images/sample_image_2.jpg"
 
-export const homeCarousel =
+export const CarouselData =
 [
         {
             image_alt: "image of green",

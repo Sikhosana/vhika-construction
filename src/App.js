@@ -2,10 +2,10 @@ import React from 'react'
 import './App.css'
 import Footer from './components/content/Footer'
 import logo from "./components/logo/logo.png";
-import Home from './components/content/HomeComponent'
-import Services from "./components/content/ServicesComponent";
-import Gallery from "./components/content/GalleryComponent";
-import Contact from "./components/content/ContactComponent";
+import Home from './components/content/Home'
+import Services from "./components/content/Services";
+import Gallery from "./components/content/Gallery";
+import Contact from "./components/content/Contact";
 
 
 //in this file we need a navigation bar hooked with onclick events that set the react state to allow rendering of the necessary info

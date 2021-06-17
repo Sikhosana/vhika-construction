@@ -1,7 +1,59 @@
 .slider {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+    transition: .4s ease-in;
+    z-index: 10;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+    transition: .4s ease-in;
+    z-index: 10;
+}
+
+.leftArrow:hover, .rightArrow:hover {
+    color: white;
+}
+
+.image {
+    width: 90%;
+    height: 600px;
+}
+
+.caption {
+    background-color: rgba(0,0,0,0.6);
+    color: whitesmoke;
+    position: absolute;
+    left: 10%;
     width: 80%;
-    height: 100vh;
-    margin: auto;
-    background-color: gray;
+    text-align: center;
+    bottom: 10%;
+    text-align: center;
+}
+
+.slide-active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+
+.slide {
+    display: none;
+    transition: display 1s ease-in;
 }
