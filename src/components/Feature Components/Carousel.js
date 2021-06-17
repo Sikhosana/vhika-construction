@@ -43,7 +43,7 @@ class Carousel extends Component {
                             <div
                                 className={
                                     this.state.index == index ?
-                                        "slide_active" : "slide"}>
+                                        "slide-active" : "slide"}>
                                 <img
                                     key={this.props.data.image}
                                     src={slide.image}
