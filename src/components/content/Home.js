@@ -11,8 +11,11 @@ class Home extends Component {
             <>
                 <div className={"homeContent"}>
                     <h1>WELCOME TO OUR HOME PAGE</h1>
+                </div>
+                <div>
                     <Carousel data = {CarouselData} />
                 </div>
+
             </>
 
         )

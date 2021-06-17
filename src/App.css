@@ -1,13 +1,12 @@
 #page {
-    /*add background info here */
     position: relative;
 }
 
 #topItem {
-    background-color: rgba(3,3,3, 0.4);
+    background-color: #ffffff;
     width: 100%;
     height: 70px;
-    color: white;
+    color: #819D5F;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,13 +21,13 @@
 }
 
 .container_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
 }
 
 img {
     height: 50px;
+    margin-right: 20px;
 }
 .container_2 {
     vertical-align: middle;
@@ -37,22 +36,46 @@ img {
 
 .menu {
     list-style: none;
+    margin-right: 20px;
 }
+
 
 .menu li {
     display: inline;
-    padding: 10px;
 }
 
+.menu li button {
+    color: #819D5F;
+    width: 100px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: none;
+    margin: 0;
+    line-height: 40px;
+    padding: 10px;
+    transition: color .5s, background-color .5s;
+}
+
+.menu li button:hover {
+    background-color: #819D5F;
+    color: white;
+}
+
+.active {
+    color: #164D60;
+}
 
 #middleItem {
     position: relative;
-    height: auto;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 105px;
+    margin-top: 70px;
+    padding-top: 30px;
+    margin-bottom: 450px;
     z-index: 3;
-    background-color: black;
+    background-color: #f6f6f6;
+    min-height: 100vh;
 }
 
 
@@ -60,9 +83,9 @@ img {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: gray;
+    background-color: #164D60;
     width: 100%;
-    height: 100px;
+    height: 400px;
     z-index: -1;
 }
 

@@ -1,11 +1,18 @@
-
 .upper {
-    padding: 10px;
+    font-family: sans-serif;
 }
 
-.container {;
+.container_f {
+    padding: 40px 20px 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#phone_numbers {
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
 }
 
 #contact-div {
@@ -13,7 +20,15 @@
 }
 
 .person {
+    color: #164D60;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-column-gap: 20px;
+    padding: 10px;
+}
+
+
+
+.copyright {
+    color: white;
+    text-align: center;
 }

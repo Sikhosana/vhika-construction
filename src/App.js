@@ -36,10 +36,34 @@ class App extends React.Component {
                             </div>
                             <div className={"container_2"}>
                                 <ul className={"menu"}>
-                                    <li><button onClick={() => this.setState({current: 'home'})} >HOME</button></li>
-                                    <li><button onClick={() => this.setState({current: 'services'})} >SERVICES</button></li>
-                                    <li><button onClick={() => this.setState({current: 'gallery'})} >GALLERY</button></li>
-                                    <li><button onClick={() => this.setState({current: 'contact'})} >CONTACT</button></li>
+                                    <li>
+                                        <button
+                                        style={{color: this.state.current === "home" ? "#164D60" : "#819D5F"}}
+                                        onClick={() => this.setState({current: 'home'})} >
+                                            HOME
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            style={{color: this.state.current === "services" ? "#164D60" : "#819D5F"}}
+                                        onClick={() => this.setState({current: 'services'})} >
+                                            SERVICES
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            style={{color: this.state.current === "gallery" ? "#164D60" : "#819D5F"}}
+                                        onClick={() => this.setState({current: 'gallery'})} >
+                                            GALLERY
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            style={{color: this.state.current === "contact" ? "#164D60" : "#819D5F"}}
+                                        onClick={() => this.setState({current: 'contact'})} >
+                                            CONTACT
+                                        </button>
+                                    </li>
                                 </ul>
                             </div>
                     </div>
