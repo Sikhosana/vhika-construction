@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Carousel from "../Feature Components/Carousel";
-import {CarouselData} from "./CarouselData";
+import {ServicesData} from "./ServicesData";
 
 class Services extends Component {
     render() {
@@ -11,7 +11,7 @@ class Services extends Component {
                 </div>
 
                 <div>
-                    <Carousel data = {CarouselData} />
+                    <Carousel data = {ServicesData} />
                 </div>
             </>
 
