@@ -55,12 +55,18 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div id={"location"}>
-
+                    <br/> <br/> <br/>
+                    <div id={""}>
+                        <h3>Vhika Construction</h3>
+                        <p>XXX Drive</p>
+                        <p>Harare</p>
+                        <p>Zimbabwe</p>
+                    </div>
                 </div>
             </div>
         <div className={"copyright"}>
             <h5>&#169; 2021 Vhika Construction</h5>
-            <h6>developed by codelum ltd</h6>
+            <h6>site developed by codelum</h6>
         </div>
         </div>
 
