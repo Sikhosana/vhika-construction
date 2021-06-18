@@ -16,10 +16,6 @@ class App extends React.Component {
         this.state = { current: "home"}
     }
 
-    showContent = (name) => {
-        console.log("called function")
-        this.setState({current: name});
-    }
     render() {
 
         return (
@@ -38,30 +34,32 @@ class App extends React.Component {
                                 <ul className={"menu"}>
                                     <li>
                                         <button
-                                        style={{color: this.state.current === "home" ? "#164D60" : "#819D5F"}}
-                                        onClick={() => this.setState({current: 'home'})} >
-                                            HOME
+                                            onClick={() => this.setState({current: 'home'})} >
+                                            <p className={this.state.current === "home" ? "active" : "inactive"}>HOME</p>
                                         </button>
                                     </li>
                                     <li>
                                         <button
-                                            style={{color: this.state.current === "services" ? "#164D60" : "#819D5F"}}
                                         onClick={() => this.setState({current: 'services'})} >
-                                            SERVICES
+                                            <p className={this.state.current === "services" ? "active" : "inactive"}>SERVICES</p>
                                         </button>
                                     </li>
                                     <li>
                                         <button
-                                            style={{color: this.state.current === "gallery" ? "#164D60" : "#819D5F"}}
                                         onClick={() => this.setState({current: 'gallery'})} >
-                                            GALLERY
+                                            <p className={this.state.current === "gallery" ? "active" : "inactive"}>GALLERY</p>
                                         </button>
                                     </li>
                                     <li>
                                         <button
-                                            style={{color: this.state.current === "contact" ? "#164D60" : "#819D5F"}}
+                                            onClick={() => this.setState({current: 'about'})} >
+                                            <p className={this.state.current === "about" ? "active" : "inactive"}>ABOUT</p>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
                                         onClick={() => this.setState({current: 'contact'})} >
-                                            CONTACT
+                                            <p className={this.state.current === "contact" ? "active" : "inactive"}>CONTACT</p>
                                         </button>
                                     </li>
                                 </ul>

@@ -8,11 +8,11 @@ class Footer extends Component {
             <div className={"upper"}>
             <div class={"container_f"}>
                 <div id={"phone_numbers"}>
-                    <h3 style={{marginLeft: "5px"}}> <FcCellPhone /> Direct lines  </h3> <br/><br/>
+                    <h3 style={{marginLeft: "5px"}}> <FcCellPhone /> DIRECT LINES  </h3> <br/><br/>
                     <div id={"contact-div"}>
                         <div className={"person"}>
                             <div className={"name"}>
-                                <p>INNOCENT DOMBO</p>
+                                <p>Innocent Dombo</p>
                             </div>
                             <div>
                                 <p><a href={"tel:+263782330171"}>+263 782-330-171</a></p>
@@ -20,7 +20,7 @@ class Footer extends Component {
                         </div>
                         <div className={"person"}>
                             <div className={"name"}>
-                                <p>HTULANI T. CHIPUNZA</p>
+                                <p>Htulani T. Chipunza</p>
                             </div>
                             <div>
                                 <p><a href={"tel:+263775314148"}>+263 775-314-148</a></p>
@@ -28,7 +28,7 @@ class Footer extends Component {
                         </div>
                         <div className={"person"}>
                             <div className={"name"}>
-                                <p>PANASHE DHLAKAMA</p>
+                                <p>Panashe Dhlakama</p>
                             </div>
                             <div>
                                 <p><a href={"tel:+263718512214"}>+263 718-512-214</a></p>

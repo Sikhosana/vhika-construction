@@ -58,13 +58,18 @@ img {
     transition: color .5s, background-color .5s;
 }
 
-.menu li button:hover {
-    background-color: #819D5F;
-    color: white;
+.menu li button p:hover {
+    color: #164D60;
+    transition: .4s;
 }
 
+.inactive {
+    color: #819D5F;
+    transition: .4s;
+}
 .active {
     color: #164D60;
+    transition: .4s;
 }
 
 #middleItem {
