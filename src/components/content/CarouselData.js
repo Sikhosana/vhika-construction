@@ -6,11 +6,11 @@ export const CarouselData =
         {
             image_alt: "image of green",
             image: image1,
-            caption: <h4>Our Green Project</h4>
+            caption: "Our Green Project"
         },
         {
             image_alt: "image of red",
             image: image2,
-            caption: <h4>Our Red Project</h4>
+            caption: "Our Red Project"
         }
 ]

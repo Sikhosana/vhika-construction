@@ -7,29 +7,40 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
-}
-
-#phone_numbers {
-    border-radius: 5px;
-    background-color: white;
-    padding: 5px;
-}
-
-#contact-div {
-    color: #fbfbfd;
+    color: white;
 }
 
 .person {
-    color: #164D60;
     font-weight: bold;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
 }
 
+a {
+    color: white;
+}
 
+#phones {
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+
+#socials {
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+#social_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .copyright {
     color: white;
     text-align: center;
+}
+#location {
+
 }

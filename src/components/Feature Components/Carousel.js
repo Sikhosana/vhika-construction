@@ -15,7 +15,7 @@ class Carousel extends Component {
 
     prevSlide = () => {
         this.setState({
-            index: this.state.index == 0 ?
+            index: this.state.index === 0 ?
                 this.props.data.length - 1 :
                 this.state.index - 1
         })
@@ -41,8 +41,9 @@ class Carousel extends Component {
                     (slide, index) => {
                         return (
                             <div
+                                key={index}
                                 className={
-                                    this.state.index == index ?
+                                    this.state.index === index ?
                                         "slide-active" : "slide"}>
                                 <img
                                     key={this.props.data.image}

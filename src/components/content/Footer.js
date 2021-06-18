@@ -1,14 +1,17 @@
 import React, {Component} from 'react'
 import '../../Styles/Contacts.css'
-import {FcCellPhone} from 'react-icons/fc'
+import {BiPhone} from 'react-icons/bi'
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
 class Footer extends Component {
+
+
     render() {
         return (
             <div className={"upper"}>
-            <div class={"container_f"}>
-                <div id={"phone_numbers"}>
-                    <h3 style={{marginLeft: "5px"}}> <FcCellPhone /> DIRECT LINES  </h3> <br/><br/>
+            <div className={"container_f"}>
+                <div id={"phones"}>
+                    <h3> <BiPhone /> DIRECT LINES  </h3> <br/>
                     <div id={"contact-div"}>
                         <div className={"person"}>
                             <div className={"name"}>
@@ -36,16 +39,28 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                <div>
-                    //other details
+                <div id={"socials"}>
+                    <h3 style={{marginLeft: "5px"}}>Our Social</h3> <br/><br/>
+
+                    <div id={"social_icons"}>
+                        <div>
+                            <a href={"#"}><FaFacebook size={42}/></a>
+                        </div>
+                        <div>
+                            <a href={"#"}><FaInstagram size={42}/></a>
+                        </div>
+                        <div>
+                            <a href={"#"}><FaTwitter size={42}/></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    //other details
+                <div id={"location"}>
+
                 </div>
             </div>
         <div className={"copyright"}>
             <h5>&#169; 2021 Vhika Construction</h5>
-            <h6>developed by codelum solutions</h6>
+            <h6>developed by codelum ltd</h6>
         </div>
         </div>
 
