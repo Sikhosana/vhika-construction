@@ -46,3 +46,21 @@ a {
 #location {
     text-align: center;
 }
+
+#facebook:hover {
+    color: #4267B2;
+    font-size: 56px;
+    transition: .4s ease-in;
+}
+
+#twitter:hover {
+    color: #1DA1F2;
+    font-size: 56px;
+    transition: .4s ease-in;
+}
+
+#instagram:hover {
+    color: #C13584;
+    font-size: 56px;
+    transition: .4s ease-in;
+}

@@ -6,6 +6,7 @@ import Home from './components/content/Home'
 import Services from "./components/content/Services";
 import Gallery from "./components/content/Gallery";
 import Contact from "./components/content/Contact";
+import About from "./components/content/About";
 
 
 //in this file we need a navigation bar hooked with onclick events that set the react state to allow rendering of the necessary info
@@ -22,9 +23,17 @@ class App extends React.Component {
             <div id={"page"}>
                 <div id={"topItem"}>
                     <div className={"container"}>
-                            <div className={"container_1"}>
+                            <div
+                                className={"container_1"}
+                                onClick={() => this.setState({current: 'home'})}
+                                style={{cursor: "pointer"}}>
                                 <div>
-                                    <img alt={"LOGO HERE"} src={logo} className={"logo"}/>
+                                    <img
+                                        alt={"LOGO HERE"}
+                                        src={logo}
+                                        className={"logo"}
+
+                                    />
                                 </div>
                                 <div>
                                     <h1>VHIKA</h1>
@@ -71,6 +80,7 @@ class App extends React.Component {
                         {this.state.current === 'services' && <Services />}
                         {this.state.current === 'gallery' && <Gallery />}
                         {this.state.current === 'contact' && <Contact />}
+                        {this.state.current === 'about' && <About />}
                 </div>
                 <div id={"bottomItem"}>
                     <Footer />

@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 
-
-class Gallery extends Component {
+class About extends Component {
     render() {
         return (
             <>
                 <div>
-                    <h1>Finished Projects</h1>
+                    <h1>About us</h1>
                 </div>
             </>
 
@@ -14,4 +13,4 @@ class Gallery extends Component {
     }
 }
 
-export default Gallery;
+export default About;

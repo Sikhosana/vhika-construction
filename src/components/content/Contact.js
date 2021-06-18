@@ -5,7 +5,12 @@ class Contact extends Component {
         return (
             <>
                 <div>
-                    <h1>WELCOME TO OUR CONTACT PAGE</h1>
+                    <h1>Get in touch with us!</h1>
+                </div>
+                <div>
+                    <form>
+
+                    </form>
                 </div>
             </>
 

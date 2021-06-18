@@ -60,18 +60,51 @@ export const ServicesData =
                 </>
         },
         {
-            image_alt: "image of red",
+            image_alt: "softscaping image",
             image: softscaping,
-            caption: "Our Red Project"
+            caption:
+                <>
+                    <h3>SOFTSCAPING</h3>
+                    <br/>
+                    <ul style={{color: "#819D5F"}}>
+                        <li>Lawns</li>
+                        <li>Trees</li>
+                        <li>Flowers</li>
+                        <li>Living walls</li>
+                    </ul>
+                </>
         },
         {
-            image_alt: "image of red",
+            image_alt: "waterscaping image",
             image: waterscaping,
-            caption: "Our Red Project"
+            caption:
+                <>
+                    <h3>SOFTSCAPING</h3>
+                    <br/>
+                    <ul style={{color: "#819D5F"}}>
+                        <li>Fish Ponds</li>
+                        <li>Fountains</li>
+                        <li>Swimming pools</li>
+                        <li>Waterfall features</li>
+                    </ul>
+                </>
         },
         {
-            image_alt: "image of other services",
+            image_alt: "other services image",
             image: other_services,
-            caption: "Our Red Project"
+            caption:
+                <>
+                    <h3>OTHER</h3>
+                    <br/>
+                    <ul style={{color: "#819D5F"}}>
+                        <li>Master planning</li>
+                        <li>Site feasibility and yield studies (research)</li>
+                        <li>Landscape management (maintenance and services) </li>
+                        <li>Green reach outs and awareness campaigns</li>
+                        <li>Consultation services</li>
+                        <li>Engineering drawings</li>
+                        <li>Topographical surveys</li>
+                    </ul>
+                </>
         }
     ]
