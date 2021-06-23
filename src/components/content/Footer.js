@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import '../../Styles/Contacts.css'
+import '../../styles/Contacts.css'
 import {BiPhone} from 'react-icons/bi'
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
