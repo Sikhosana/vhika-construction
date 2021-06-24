@@ -4,13 +4,18 @@ import emailjs from 'emailjs-com'
 import{ init} from 'emailjs-com';
 init("user_peGW9RaIcqylhlY1oZXaN");
 
+
+let items = ['lnameError', 'fnameError', 'emlError', 'msgError']
+
 class Contact extends Component {
 
     constructor(props) {
-        super(props);
+        super(props)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this);
         this.clearForm = this.clearForm.bind(this);
+        this.showErrors = this.showErrors.bind(this)
+        this.hideErrors = this.hideErrors.bind(this)
         this.state = {
             firstName: '',
             lastName: '',
@@ -30,6 +35,14 @@ class Contact extends Component {
         )
     }
 
+    showErrors(issues) {
+        issues.forEach((issue) => document.getElementById(issue).style.display='block')
+    }
+
+    hideErrors(items) {
+        items.forEach((item) => document.getElementById(item).style.display='none')
+    }
+
     handleChange(event) {
         this.setState({[event.target.name]: event.target.value})
     }
@@ -37,13 +50,54 @@ class Contact extends Component {
     handleSubmit (e) {
         e.preventDefault()
 
-        const templateId = 'template_fy9idqc';
-        this.sendFeedback(templateId,
-            {
+        let errors = false
+        let issues = []
+        let fname = this.state.firstName
+        let lname = this.state.lastName
+        let eml = this.state.email
+        let msg = this.state.message
+
+        if (fname.trim() === '') {
+            issues.push('fnameError')
+            errors = true;
+        }
+        else {
+            document.getElementById('fnameError').style.display='none'
+        }
+        if (lname.trim() === '') {
+            issues.push('lnameError')
+            errors = true;
+        } else {
+            document.getElementById('lnameError').style.display='none'
+        }
+        if (!(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(eml.trim()))) {
+            issues.push('emlError')
+            errors = true;
+        } else {
+            document.getElementById('emlError').style.display='none'
+        }
+        if (msg.length < 10) {
+            issues.push('msgError')
+            errors = true;
+        } else {
+            document.getElementById('msgError').style.display='none'
+        }
+
+        if (issues.length > 0)
+            this.showErrors(issues)
+        else
+            this.hideErrors(items)
+
+
+        if (!errors) {
+            const templateId = 'template_fy9idqc';
+            this.sendFeedback(templateId,
+                {
                     message: this.state.message,
                     from_name: this.state.firstName + ' ' + this.state.lastName,
                     reply_to: this.state.email
-            })
+                })
+        }
 
     }
 
@@ -55,6 +109,7 @@ class Contact extends Component {
             //show modal
             console.log('Email successfully sent!')
             this.clearForm();
+            this.hideErrors(items)
         })
             .catch(err => {
                 //show modal
@@ -82,12 +137,13 @@ class Contact extends Component {
                                 type={"text"}
                                 name={"firstName"}
                                 id={"firstName"}
-                                required
                                 value={this.state.firstName}
                                 onChange={this.handleChange}
                             />
+                            <p id={'fnameError'} style={{color: 'red', display: 'none'}}>Please enter a valid first name</p>
                         </div>
                     </div>
+
 
                     <div className={"input_container"}>
                         <div className={"label"}>
@@ -99,6 +155,7 @@ class Contact extends Component {
                                 name={"lastName"} id={"lastName"}
                                 onChange={this.handleChange}
                                 value={this.state.lastName}/>
+                            <p id={'lnameError'} style={{color: 'red', display: 'none'}}>Please enter a valid last name</p>
                         </div>
                     </div>
 
@@ -114,6 +171,7 @@ class Contact extends Component {
                                 value={this.state.email}
                                 onChange={this.handleChange}
                             />
+                            <p id={'emlError'} style={{color: 'red', display: 'none'}}>Please enter a valid email address</p>
                         </div>
                     </div>
 
@@ -129,6 +187,7 @@ class Contact extends Component {
                                 value={this.state.message}
                                 onChange={this.handleChange}
                             />
+                            <p id={'msgError'} style={{color: 'red', display: 'none'}}>Please enter a valid message</p>
                         </div>
                     </div>
                     <div className={"btn"}>
