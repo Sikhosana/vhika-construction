@@ -2,10 +2,15 @@ import React, {Component} from 'react'
 import "../../styles/contact.css"
 import emailjs from 'emailjs-com'
 import{ init} from 'emailjs-com';
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 init("user_peGW9RaIcqylhlY1oZXaN");
 
 
 let items = ['lnameError', 'fnameError', 'emlError', 'msgError']
+
+
+
 
 class Contact extends Component {
 
@@ -16,6 +21,7 @@ class Contact extends Component {
         this.clearForm = this.clearForm.bind(this);
         this.showErrors = this.showErrors.bind(this)
         this.hideErrors = this.hideErrors.bind(this)
+        this.successMessage = this.successMessage.bind(this)
         this.state = {
             firstName: '',
             lastName: '',
@@ -34,7 +40,17 @@ class Contact extends Component {
             }
         )
     }
-
+    successMessage = () => {
+        confirmAlert({
+            title: 'Message sent!',
+            message: 'We will get in touch with you shortly :)',
+            buttons: [
+                {
+                    label: 'Done',
+                }
+            ]
+        });
+    };
     showErrors(issues) {
         issues.forEach((issue) => document.getElementById(issue).style.display='block')
     }
@@ -106,8 +122,8 @@ class Contact extends Component {
             'service_cb8oxb2', templateId,
             variables
         ).then(res => {
-            //show modal
-            console.log('Email successfully sent!')
+            console.log(res)
+            this.successMessage()
             this.clearForm();
             this.hideErrors(items)
         })
