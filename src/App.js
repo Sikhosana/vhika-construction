@@ -32,7 +32,6 @@ class App extends React.Component {
                                         alt={"LOGO HERE"}
                                         src={logo}
                                         className={"logo"}
-
                                     />
                                 </div>
                                 <div>

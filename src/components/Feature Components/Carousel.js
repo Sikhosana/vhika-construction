@@ -50,9 +50,9 @@ class Carousel extends Component {
                                     src={slide.image}
                                     alt={slide.image_alt}
                                     className={"image"}/>
-                                <h4 className={"caption"}>
+                                <div className={"caption"}>
                                     {slide.caption}
-                                </h4>
+                                </div>
                             </div>
                         )
                     }
