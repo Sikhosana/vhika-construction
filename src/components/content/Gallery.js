@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import myVid from "../../resources/myVid.mp4"
+import myVid from "../../resources/videos/myVid.mp4"
 import "../../styles/gallery.css"
 
 class Gallery extends Component {
