@@ -5,13 +5,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## About
 
-This is a project for Vhika Construction, a Zimbabwean bases company focused on creating greenspace environments and (see website for more info -> vhika.com)
+This is a project for Vhika Construction, a Zimbabwean bases company focused on creating greenspace environments and (see website for more info -> https://www.vhika.com)
 
 
 ### Site developed by:
 
 Sikhosana Dhliwayo
+
 sdhliwayo01@gmail.com
+
 2021
 
 
