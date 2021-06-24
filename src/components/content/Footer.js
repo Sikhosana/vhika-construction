@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
-import '../../styles/Contacts.css'
+import '../../styles/footer.css'
 import {BiPhone} from 'react-icons/bi'
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
 class Footer extends Component {
-
 
     render() {
         return (

@@ -1,6 +1,11 @@
 import React, {Component} from 'react'
 
 class About extends Component {
+
+    componentDidMount() {
+        window.scroll(0,0)
+    }
+
     render() {
         return (
             <>

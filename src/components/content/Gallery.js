@@ -1,14 +1,24 @@
 import React, {Component} from 'react'
-
+import myVid from "../../resources/myVid.mp4"
+import "../../styles/gallery.css"
 
 class Gallery extends Component {
+
+    componentDidMount() {
+        window.scroll(0,0)
+    }
+
     render() {
         return (
-            <>
-                <div>
-                    <h1>Finished Projects</h1>
+
+            <div>
+                <video autoPlay muted loop id="myVideo">
+                    <source src={myVid} type={"video/mp4"}/>
+                </video>
+                <div id={"txt"}>
+                    <h1>coming soon</h1>
                 </div>
-            </>
+            </div>
 
         )
     }

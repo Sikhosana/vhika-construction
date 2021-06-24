@@ -4,6 +4,11 @@ import {ServicesData} from "./ServicesData";
 import {FcServices} from 'react-icons/fc'
 
 class Services extends Component {
+
+    componentDidMount() {
+        window.scroll(0,0)
+    }
+
     render() {
         return (
             <>
