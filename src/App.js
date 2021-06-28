@@ -7,6 +7,7 @@ import Services from "./components/content/Services";
 import Gallery from "./components/content/Gallery";
 import Contact from "./components/content/Contact";
 import About from "./components/content/About";
+import {VscMenu} from 'react-icons/vsc'
 
 
 //in this file we need a navigation bar hooked with onclick events that set the react state to allow rendering of the necessary info
@@ -22,6 +23,83 @@ class App extends React.Component {
         return (
             <div id={"page"}>
                 <div id={"topItem"}>
+                    <div className={"dropdown_menu"}>
+                        <div className={"drop_icons"}>
+                            <div
+                                className={"container_1"}
+                                onClick={() => this.setState({current: 'home'})}
+                                style={{cursor: "pointer"}}>
+                                <div>
+                                    <img
+                                        alt={"LOGO HERE"}
+                                        src={logo}
+                                        className={"logo"}
+                                    />
+                                </div>
+                                <div>
+                                    <h1>VHIKA</h1>
+                                </div>
+                            </div>
+                            <div className={"menu_item"}>
+                                <button><VscMenu size={50}/></button>
+                            </div>
+
+                        </div>
+                        <div className={"dropdown_content"}>
+                            <ul>
+                                <li>
+                                    <button
+                                        onClick={() => this.setState({current: 'home'})} >
+                                        <p className={this.state.current === "home" ? "active" : "inactive"}>HOME</p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={() => this.setState({current: 'services'})} >
+                                        <p className={this.state.current === "services" ? "active" : "inactive"}>SERVICES</p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={() => this.setState({current: 'gallery'})} >
+                                        <p className={this.state.current === "gallery" ? "active" : "inactive"}>GALLERY</p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={() => this.setState({current: 'about'})} >
+                                        <p className={this.state.current === "about" ? "active" : "inactive"}>ABOUT</p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button
+                                        onClick={() => this.setState({current: 'contact'})} >
+                                        <p className={this.state.current === "contact" ? "active" : "inactive"}>CONTACT</p>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div className={"container"}>
                             <div
                                 className={"container_1"}
