@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import myVid from "../../resources/videos/myVid.mp4"
 import "../../styles/gallery.css"
+import image from "../../resources/images/gallery_background.jpg"
 
 class Gallery extends Component {
 
@@ -12,9 +12,7 @@ class Gallery extends Component {
         return (
 
             <div>
-                <video autoPlay muted loop id="myVideo">
-                    <source src={myVid} type={"video/mp4"}/>
-                </video>
+                <img id={"myImage"} srcSet={image} />
                 <div id={"txt"}>
                     <h1>coming soon</h1>
                 </div>
