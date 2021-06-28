@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 850px) {
     .upper {
         font-family: sans-serif;
     }
@@ -64,4 +64,6 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
 
+}

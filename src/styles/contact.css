@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 850px) {
     .contact_form {
         width: 80%;
         margin: auto;
@@ -53,5 +53,7 @@
     }
 
 }
+@media only screen and (max-width: 600px) {
 
+}
 

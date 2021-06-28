@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 850px) {
     .all_home {
         position: absolute;
         color: white;
@@ -66,4 +66,8 @@
         border-radius: 5px;
         cursor: pointer;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
 }
