@@ -57,7 +57,6 @@ class Footer extends Component {
                     <br/> <br/> <br/>
                     <div id={""}>
                         <h3>Vhika Construction</h3>
-                        <p>XXX Drive</p>
                         <p>Harare</p>
                         <p>Zimbabwe</p>
                     </div>
