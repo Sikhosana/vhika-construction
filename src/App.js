@@ -7,7 +7,7 @@ import Services from "./components/content/Services";
 import Gallery from "./components/content/Gallery";
 import Contact from "./components/content/Contact";
 import About from "./components/content/About";
-import {VscMenu} from 'react-icons/vsc'
+import {VscMenu, VscChromeClose} from 'react-icons/vsc'
 
 
 //in this file we need a navigation bar hooked with onclick events that set the react state to allow rendering of the necessary info
@@ -15,7 +15,15 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         console.log ("set the global state")
-        this.state = { current: "home"}
+        this.toggleMenu = this.toggleMenu.bind(this)
+        this.state = {
+            current: "home",
+            open: false
+        }
+    }
+
+    toggleMenu() {
+
     }
 
     render() {
@@ -41,7 +49,8 @@ class App extends React.Component {
                                 </div>
                             </div>
                             <div className={"menu_item"}>
-                                <button><VscMenu size={50}/></button>
+                                {!this.state.open && <button onClick={() => this.setState({open: !this.state.open})}><VscMenu size={50}/></button>}
+                                {this.state.open && <button onClick={() => this.setState({open: !this.state.open})}><VscChromeClose size={50}/></button>}
                             </div>
 
                         </div>
