@@ -1,0 +1,42 @@
+.whole_page {
+    padding-bottom: 200px;
+}
+
+.about_content {
+    margin: 60px auto 60px auto;
+    text-align: left;
+    width: 60%;
+    color: white;
+}
+
+.about_sections {
+    margin-bottom: 60px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #164D60;;
+}
+
+.about_sections h2 {
+
+}
+
+.hus {
+    margin-top: 50px;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about_sections p {
+    color: white;
+}
+
+.about_heads {
+    margin-bottom: 20px;
+}
+
+.about_bodies {
+
+    margin: auto;
+}
