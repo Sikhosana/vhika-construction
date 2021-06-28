@@ -1,63 +1,67 @@
-.upper {
-    font-family: sans-serif;
+@media screen and (min-width: 480px) {
+    .upper {
+        font-family: sans-serif;
+    }
+
+    .container_f {
+        padding: 40px 20px 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .person {
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+    }
+
+    a {
+        color: white;
+    }
+
+    #phones {
+        border-right: 1px solid white;
+        text-align: center;
+    }
+
+
+    #socials {
+        border-right: 1px solid white;
+        text-align: center;
+    }
+
+    #social_icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .copyright {
+        color: white;
+        text-align: center;
+        font-weight: normal;
+    }
+    #location {
+        text-align: center;
+    }
+
+    #facebook:hover {
+        color: #4267B2;
+        transition: .4s ease-in;
+    }
+
+    #twitter:hover {
+        color: #1DA1F2;
+        transition: .4s ease-in;
+    }
+
+    #instagram:hover {
+        color: #C13584;
+        transition: .4s ease-in;
+    }
 }
 
-.container_f {
-    padding: 40px 20px 20px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    color: white;
-    margin-bottom: 50px;
-}
 
-.person {
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 10px;
-}
-
-a {
-    color: white;
-}
-
-#phones {
-    border-right: 1px solid white;
-    text-align: center;
-}
-
-
-#socials {
-    border-right: 1px solid white;
-    text-align: center;
-}
-
-#social_icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.copyright {
-    color: white;
-    text-align: center;
-    font-weight: normal;
-}
-#location {
-    text-align: center;
-}
-
-#facebook:hover {
-    color: #4267B2;
-    transition: .4s ease-in;
-}
-
-#twitter:hover {
-    color: #1DA1F2;
-    transition: .4s ease-in;
-}
-
-#instagram:hover {
-    color: #C13584;
-    transition: .4s ease-in;
-}

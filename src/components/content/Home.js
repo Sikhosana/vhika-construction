@@ -16,19 +16,39 @@ class Home extends Component {
                     <div className={"head"}>
                         <h1>Welcome to Vhika Construction</h1>
                     </div>
-                    <div>
-                        <div>
+                    <div className={"motto"}>
+                        <h1>Lets go green now!</h1>
+                    </div>
+                    <div className={"h_container"}>
+                        <div className={"h_items"}>
                             <h2>About us</h2>
+                            <p>Welcome to the place where beauty and imagination abound.
+                                We think that beautiful designs begin with a simple concept and a pen and paper</p>
+                            <button>read more</button>
                         </div>
-                        <div>
+                        <div className={"h_items"}>
                             <h2>Our Mission</h2>
+                            <ul>
+                                <li>
+                                    Our loyal business and residential clients are at the heart of our success
+                                </li>
+                                <li>
+                                    To be a responsible, trustworthy, and dependable organization
+                                    capable of creating long-term partnerships based on mutual respect
+                                </li>
+                            </ul>
+                            <button>read more</button>
                         </div>
-                        <div>
+                        <div className={"h_items"}>
                             <h2>Our Strategy</h2>
+                            <p>Our organization has a very efficient and competent workforce. Our clients'
+                                pleasure is our principal focus. </p>
+                            <button>read more</button>
                         </div>
                     </div>
+
                     <div className={"motto"}>
-                        <button>Lets go green now!</button>
+                        <button>Contact us today!</button>
                     </div>
                 </div>
             </div>
