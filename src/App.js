@@ -24,6 +24,17 @@ class App extends React.Component {
 
     toggleMenu() {
 
+        let current_class =
+            document.getElementById("list")
+                .className;
+        if (current_class === "closed") {
+            document.getElementById("list")
+                .className = "open";
+        } else {
+            document.getElementById("list")
+                .className = "closed";
+        }
+        this.setState({open: !this.state.open})
     }
 
     render() {
@@ -49,13 +60,19 @@ class App extends React.Component {
                                 </div>
                             </div>
                             <div className={"menu_item"}>
-                                {!this.state.open && <button onClick={() => this.setState({open: !this.state.open})}><VscMenu size={50}/></button>}
-                                {this.state.open && <button onClick={() => this.setState({open: !this.state.open})}><VscChromeClose size={50}/></button>}
+                                {!this.state.open &&
+                                <button onClick={this.toggleMenu}>
+                                    <VscMenu style={{color: "#164D60"}} size={50}/>
+                                </button>}
+                                {this.state.open &&
+                                <button onClick={this.toggleMenu}>
+                                    <VscChromeClose style={{color: "#164D60"}} size={50}/>
+                                </button>}
                             </div>
 
                         </div>
-                        <div className={"dropdown_content"}>
-                            <ul>
+                        <div id={"dropdown_content"}>
+                            <ul id={"list"} className={"closed"}>
                                 <li>
                                     <button
                                         onClick={() => this.setState({current: 'home'})} >
