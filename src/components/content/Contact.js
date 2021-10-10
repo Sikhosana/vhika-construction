@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com'
 import{ init} from 'emailjs-com';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
-init("user_peGW9RaIcqylhlY1oZXaN");
+init("user_dMsMnWxfIS7V7oaI8RAXn");
 
 
 let items = ['lnameError', 'fnameError', 'emlError', 'msgError']
@@ -106,7 +106,7 @@ class Contact extends Component {
 
 
         if (!errors) {
-            const templateId = 'template_fy9idqc';
+            const templateId = 'template_0z1hapl';
             this.sendFeedback(templateId,
                 {
                     message: this.state.message,
@@ -114,12 +114,11 @@ class Contact extends Component {
                     reply_to: this.state.email
                 })
         }
-
     }
 
     sendFeedback (templateId, variables) {
         emailjs.send(
-            'service_cb8oxb2', templateId,
+            'service_c4x1lz9', templateId,
             variables
         ).then(res => {
             console.log(res)
@@ -128,7 +127,8 @@ class Contact extends Component {
             this.hideErrors(items)
         })
             .catch(err => {
-                //show modal
+                //  additional feature
+                //  show modal for errors
                 console.error('Error:', err)
             })
     }
@@ -141,7 +141,7 @@ class Contact extends Component {
         return (
             <>
                 <div>
-                    <h1>Get in touch with us!</h1>
+                    <h1 style={{marginTop: "5%", marginBottom: "5%" }}>Get in touch with us!</h1>
                 </div>
                 <form className={"contact_form"} onSubmit={this.handleSubmit}>
                     <div className={"input_container"}>

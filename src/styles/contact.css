@@ -53,7 +53,56 @@
     }
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
+    .contact_form {
+        width: 80%;
+        margin: auto;
+        padding: 5%;
+        font-size: 16px;
+    }
 
+    .input_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .label {
+        text-align: left;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+
+    .input_item {
+        text-align: left;
+    }
+
+    input, textarea {
+        width: 100%;
+        line-height: 1.5em;
+        font-size: 16px;
+        padding: 2px;
+        color: black;
+        border-radius: 5px;
+        border: 1px solid #164D60;
+    }
+    .btn {
+        width: 55%;
+        margin: 20px auto;
+    }
+
+    .btn button {
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        background-color: #164D60;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn button:hover {
+        color: white;
+        background-color: #819D5F;
+    }
 }
 

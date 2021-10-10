@@ -43,13 +43,13 @@ class Footer extends Component {
 
                     <div id={"social_icons"}>
                         <div>
-                            <a href={"https"} id={"facebook"}><FaFacebook size={42}/></a>
+                            <a href={"https://www.facebook.com/"} id={"facebook"}><FaFacebook size={42}/></a>
                         </div>
                         <div>
-                            <a href={"https"} id={"instagram"}><FaInstagram size={42}/></a>
+                            <a href={"https://www.instagram.com/"} id={"instagram"}><FaInstagram size={42}/></a>
                         </div>
                         <div>
-                            <a href={"https"} id={"twitter"}><FaTwitter size={42}/></a>
+                            <a href={"https://www.twitter.com/"} id={"twitter"}><FaTwitter size={42}/></a>
                         </div>
                     </div>
                 </div>

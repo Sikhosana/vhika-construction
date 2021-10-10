@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media (min-width: 850px) {
     .whole_page {
         padding-bottom: 200px;
     }
@@ -34,13 +34,65 @@
     }
 
     .about_heads {
+        text-align: center;
         margin-bottom: 20px;
     }
 
     .about_bodies {
-
+        text-align: center;
         margin: auto;
+    }
+    .about_bodies ul li {
+        text-align: left;
     }
 }
 
+@media (max-width: 850px) {
+    .whole_page {
+        padding-bottom: 100px;
+    }
+
+    .about_content {
+        margin: 30px auto 30px auto;
+        text-align: left;
+        width: 80%;
+
+    }
+
+    .about_sections {
+        margin-bottom: 30px;
+        padding: 15px;
+        border-radius: 10px;
+
+    }
+
+    .about_sections h2 {
+
+    }
+
+    .hus {
+        margin-top: 50px;
+        font-size: 1.2em;
+        padding: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .about_sections p {
+
+    }
+
+    .about_heads {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about_bodies {
+        text-align: center;
+        margin: auto;
+    }
+    .about_bodies ul li {
+        text-align: left;
+    }
+}
 

@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media (min-width: 850px) {
     #page {
         position: relative;
     }
@@ -29,6 +29,9 @@
     .container_1 {
         display: flex;
         align-items: center;
+    }
+    .container_1 h1 {
+        color: #819D5F;
     }
 
     img {
@@ -108,8 +111,7 @@
     }
 }
 
-@media screen and (max-width: 850px) {
-
+@media (max-width: 850px) {
     #topItem {
         background-color: #ffffff;
         width: 100%;
@@ -128,6 +130,10 @@
     .container_1 {
         display: flex;
         align-items: center;
+    }
+
+    .container_1 h1 {
+        color: #819D5F;
     }
 
     .dropdown_menu {
@@ -193,7 +199,7 @@
     }
 
     .open {
-        max-height: 400px;
+        max-height: 100vh;
         overflow: hidden;
         transition: max-height 1s ease-in;
     }

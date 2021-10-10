@@ -13,7 +13,7 @@ class Services extends Component {
         return (
             <>
                 <div>
-                    <h1><FcServices /> Services <FcServices /></h1> <br/>
+                    <h1 style={{marginTop: "5%", marginBottom: "5%" }}><FcServices /> Services <FcServices /></h1> <br/>
                 </div>
 
                 <div>

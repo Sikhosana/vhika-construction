@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import background_image from "../../resources/images/home_background.jpg"
+import {Link} from "react-router-dom";
 import "../../styles/home.css"
 
 class Home extends Component {
 
     componentDidMount() {
-        window.scroll(0,0)
+        window.scroll(0, 0)
     }
 
     render() {
@@ -24,7 +25,9 @@ class Home extends Component {
                             <h2>About us</h2>
                             <p>Welcome to the place where beauty and imagination abound.
                                 We think that beautiful designs begin with a simple concept and a pen and paper</p>
-                            <button>read more</button>
+                            <Link to="/about">
+                                <button>read more</button>
+                            </Link>
                         </div>
                         <div className={"h_items"}>
                             <h2>Our Mission</h2>
@@ -37,18 +40,24 @@ class Home extends Component {
                                     capable of creating long-term partnerships based on mutual respect
                                 </li>
                             </ul>
-                            <button>read more</button>
+                            <Link to="/about">
+                                <button>read more</button>
+                            </Link>
                         </div>
                         <div className={"h_items"}>
                             <h2>Our Strategy</h2>
                             <p>Our organization has a very efficient and competent workforce. Our clients'
                                 pleasure is our principal focus. </p>
-                            <button>read more</button>
+                            <Link to="/about">
+                                <button>read more</button>
+                            </Link>
                         </div>
                     </div>
 
                     <div className={"motto"}>
-                        <button>Contact us today!</button>
+                        <Link to="/contact">
+                            <button>Contact us today!</button>
+                        </Link>
                     </div>
                 </div>
             </div>
